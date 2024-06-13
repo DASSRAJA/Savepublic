@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read EPUB</title>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            height: calc(100vh - 60px); /* Adjusted height to account for the toolbar */
+        }
+        .left-panel {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            border-right: 1px solid #ccc;
+            background-color: #f5f5f5;
+        }
+        .right-panel {
+            flex: 2;
+            padding: 20px;
+            overflow-y: auto;
+            background-color: #ffffff;
+        }
+        #content-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .toolbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: auto;
+            background-color: #007bff;
+            padding: 5px; /* Reduced padding */
+            display: flex;
+            justify-content: space-between; /* Adjusted alignment */
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex-wrap: wrap; /* Allow wrapping */
+        }
+        .toolbar input[type="text"], .toolbar button, .toolbar select {
+            margin: 5px; /* Adjusted margin */
+            border: none;
+            padding: 5px 10px; /* Reduced padding */
+            border-radius: 20px;
+            outline: none;
+        }
+        .toolbar input[type="text"] {
+            flex: 1;
+            min-width: 100px; /* Adjusted minimum width */
+        }
+        .toolbar button {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+        }
+        .toolbar select {
+            background-color: #ffc107;
+            cursor: pointer;
+        }
+        .toolbar button:hover, .toolbar select:hover {
+            opacity: 0.9;
+        }
+        .toolbar audio {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        body.night-mode {
+            background-color: #2e2e2e;
+            color: #ffffff;
+        }
+        body.night-mode a {
+            color: #4a90e2;
+        }
+        body.night-mode .toolbar {
+            background-color: #444444;
+        }
+        body.night-mode .left-panel {
+            background-color: #3c3c3c;
+        }
+        body.night-mode .right-panel {
+            background-color: #3c3c3c;
+        }
+        .highlight {
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="toolbar">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button id="searchButton">Search</button>
+        <button id="previousButton">Previous</button>
+        <button id="nextButton">Next</button>
+        <button id="nightModeButton">Night Mode</button>
+        <button id="bookmarkButton">Bookmark This Page</button>
+        <select id="bookmarksSelect">
+            <option value="">Select Bookmark</option>
+        </select>
+        <button id="clearBookmarksButton">Clear Bookmarks</button>
+        <button id="playTTSButton">Play Text</button>
+        <button id="stopTTSButton">Stop Text</button>
+        <select id="voiceSelect">
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+        </select>
+    </div>
+    <div class="container">
+        <div class="left-panel">
+            <h1>EoneReader</h1>
+            <h2>Book Browsing List</h2>
+            <div>
+                <ul>
+                    {% for file in files %}
+                        <li><a href="/unzipped_books/{{ folder_name }}/{{ file }}" target="contentFrame">{{ file }}</a></li>
+                    {% endfor %}
+                    {% for directory in directories %}
+                        <li>{{ directory }}
+                            <ul>
+                                {% for file in directory_files[directory] %}
+                                    <li><a href="/unzipped_books/{{ folder_name }}/{{ directory }}/{{ file }}" target="contentFrame">{{ file }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="right-panel">
+            <iframe id="content-frame" name="contentFrame"></iframe>
+        </div>
+    </div>
+    <div id="context-menu" class="context-menu">
+        <a href="#" id="delete-bookmark">Delete Bookmark</a>
+    </div>
+
+    <script>
+        // Night mode toggle
+        document.getElementById('nightModeButton').addEventListener('click', function() {
+            document.body.classList.toggle('night-mode');
+        });
+
+        // Bookmark functionality
+        document.getElementById('bookmarkButton').addEventListener('click', bookmarkPage);
+
+        function bookmarkPage() {
+            var iframe = document.getElementById('content-frame');
+            var currentPage = iframe.contentWindow.document.location.href;
+            var bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
+            if (!bookmarks.includes(currentPage)) {
+                bookmarks.push(currentPage);
+                localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+                updateBookmarksSelect();
+            }
+        }
+
+        function updateBookmarksSelect() {
+            var bookmarksSelect = document.getElementById('bookmarksSelect');
+            var bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
+            bookmarksSelect.innerHTML = '<option value="">Select Bookmark</option>';
+            bookmarks.forEach(function(bookmark, index) {
+                var option = document.createElement('option');
+                option.value = bookmark;
+                option.textContent = 'Bookmark ' + (index + 1);
+                bookmarksSelect.appendChild(option);
+            });
+        }
+
+        document.getElementById('bookmarksSelect').addEventListener('change', function() {
+            var iframe = document.getElementById('content-frame');
+            iframe.src = this.value;
+        });
+
+        window.onload = updateBookmarksSelect;
+
+        // TTS functionality
+        var synth = window.speechSynthesis;
+        var voices = [];
+        var currentUtterance;
+
+        function populateVoiceList() {
+            voices = synth.getVoices();
+        }
+
+        populateVoiceList();
+        if (speechSynthesis.onvoiceschanged !== undefined) {
+            speechSynthesis.onvoiceschanged = populateVoiceList;
+        }
+
+        document.getElementById('playTTSButton').addEventListener('click', function() {
+            var iframe = document.getElementById('content-frame');
+            var text = iframe.contentWindow.document.body.textContent || iframe.contentWindow.document.body.innerText;
+            var selectedVoice = document.getElementById('voiceSelect').value;
+            var voice = voices.find(voice => voice.lang.startsWith(selectedVoice));
+            if (voice && text) {
+                currentUtterance = new SpeechSynthesisUtterance(text);
+                currentUtterance.voice = voice;
+                synth.speak(currentUtterance);
+            }
+        });
+
+        document.getElementById('stopTTSButton').addEventListener('click', function() {
+            if (currentUtterance) {
+                synth.cancel();
+            }
+        });
+
+        // Update the displayBookmarks function to add class and data attribute to bookmarks
+        function displayBookmarks() {
+            var bookmarksContainer = document.getElementById('bookmarks');
+            var bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
+
+            // Clear previous bookmarks
+            bookmarksContainer.innerHTML = '';
+
+            // Add bookmarks to the container
+            bookmarks.forEach(function(bookmark) {
+                var bookmarkLink = document.createElement('a');
+                bookmarkLink.href = bookmark;
+                bookmarkLink.textContent = 'Page ' + (bookmarks.indexOf(bookmark) + 1);
+                bookmarkLink.target = 'contentFrame';
+                bookmarkLink.classList.add('bookmark-item');
+                bookmarkLink.setAttribute('data-url', bookmark);
+                bookmarksContainer.appendChild(bookmarkLink);
+            });
+        }
+
+        // Function to clear bookmarks
+        function clearBookmarks() {
+            localStorage.removeItem('bookmarks');
+            // Optionally, provide feedback to the user
+            alert('Bookmarks cleared successfully.');
+            updateBookmarksSelect();
+        }
+
+        // Event listener for clear bookmarks button
+        document.getElementById('clearBookmarksButton').addEventListener('click', clearBookmarks);
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Initialize bookmarks select
+            updateBookmarksSelect();
+        });
+
+        // Search functionality
+        document.getElementById('searchButton').addEventListener('click', function() {
+            var query = document.getElementById('searchInput').value.toLowerCase();
+            var iframe = document.getElementById('content-frame');
+            var contentDocument = iframe.contentDocument || iframe.contentWindow.document;
+
+            // Clear previous highlights
+            clearHighlights(contentDocument.body);
+
+            // Highlight new matches
+            highlightMatches(contentDocument.body, query);
+        });
+
+        function highlightMatches(node, query) {
+            if (node.nodeType === Node.TEXT_NODE) {
+                var text = node.nodeValue.toLowerCase();
+                var matchStart = text.indexOf(query);
+                if (matchStart !== -1) {
+                    var span = document.createElement('span');
+                    span.className = 'highlight';
+                    span.textContent = node.nodeValue.substring(matchStart, matchStart + query.length);
+
+                    var before = document.createTextNode(node.nodeValue.substring(0, matchStart));
+                    var after = document.createTextNode(node.nodeValue.substring(matchStart + query.length));
+                    var parent = node.parentNode;
+
+                    parent.insertBefore(before, node);
+                    parent.insertBefore(span, node);
+                    parent.insertBefore(after, node);
+                    parent.removeChild(node);
+                }
+            } else if (node.nodeType === Node.ELEMENT_NODE && node.childNodes) {
+                node.childNodes.forEach(function(childNode) {
+                    highlightMatches(childNode, query);
+                });
+            }
+        }
+
+        function clearHighlights(node) {
+            if (node.nodeType === Node.ELEMENT_NODE) {
+                var highlights = node.querySelectorAll('.highlight');
+                highlights.forEach(function(highlight) {
+                    var parent = highlight.parentNode;
+                    parent.replaceChild(document.createTextNode(highlight.textContent), highlight);
+                    parent.normalize();
+                });
+            }
+        }
+
+        document.getElementById('previousButton').addEventListener('click', function() {
+            window.history.back();
+        });
+
+        document.getElementById('nextButton').addEventListener('click', function() {
+            window.history.forward();
+        });
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Initialize bookmarks select
+            updateBookmarksSelect();
+        });
+    </script>
+</body>
+</html>

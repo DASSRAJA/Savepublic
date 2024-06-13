@@ -1,0 +1,145 @@
+
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background: #007bff;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Upload form styles */
+.upload-form {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.upload-form input[type="file"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.upload-form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-form button:hover {
+    background: #0056b3;
+}
+
+/* EPUB reading interface styles */
+.browsing-list {
+    margin: 20px 0;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.browsing-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.browsing-list li {
+    margin: 10px 0;
+}
+
+.browsing-list a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.browsing-list a:hover {
+    text-decoration: underline;
+}
+
+#epub-content {
+    width: 100%;
+    height: 600px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+/* static/css/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+input[type="file"] {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#file-list {
+    list-style: none;
+    padding: 0;
+}
+
+#file-list li {
+    margin: 5px 0;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EQF Reader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #4CAF50;
+            color: white;
+        }
+        main {
+            text-align: center;
+            margin-top: 50px;
+        }
+        form {
+            display: inline-block;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to EoneReader</h1>
+		 <h2>It is feature Rich- Real Fast, Read and Listen </h2>
+    </header>
+    <main>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="file">Choose EPUB file:</label>
+            <br>
+            <input type="file" id="file" name="file">
+            <br>
+            <button type="submit">Upload to Read</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 EoneReader.Exe. By Vareshwar & Humisha. Hisar. 125001 India. All rights reserved.</p>
+    </footer>
+</body>
+</html>
