@@ -1,0 +1,178 @@
+2024-06-15 17:43:44,151 WARNING werkzeug MainThread :  * Debugger is active!
+2024-06-15 17:43:44,182 INFO werkzeug MainThread :  * Debugger PIN: 769-155-080
+2024-06-15 18:46:43,712 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 18:46:43] "[36mGET /unzipped_books/e04ba1fd-bbcd-4bc3-bbf0-7eec25e5b92d/EPUB/-21.html HTTP/1.1[0m" 304 -
+2024-06-15 18:46:43,766 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 18:46:43] "[36mGET /unzipped_books/e04ba1fd-bbcd-4bc3-bbf0-7eec25e5b92d/EPUB/images/image_1.png HTTP/1.1[0m" 304 -
+2024-06-15 18:46:43,768 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 18:46:43] "[36mGET /unzipped_books/e04ba1fd-bbcd-4bc3-bbf0-7eec25e5b92d/EPUB/images/image_2.png HTTP/1.1[0m" 304 -
+2024-06-15 18:46:43,774 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 18:46:43] "[36mGET /unzipped_books/e04ba1fd-bbcd-4bc3-bbf0-7eec25e5b92d/EPUB/images/image_3.png HTTP/1.1[0m" 304 -
+2024-06-15 18:47:53,983 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 18:47:53] "[33mGET /unzipped_books/2dcc58fc-1a98-41c1-9afe-3d13308b1b25/EPUB/-14.html HTTP/1.1[0m" 404 -
+2024-06-15 18:48:05,609 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 18:48:05] "[36mGET /unzipped_books/e04ba1fd-bbcd-4bc3-bbf0-7eec25e5b92d/EPUB/-21.html HTTP/1.1[0m" 304 -
+2024-06-15 18:48:05,667 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 18:48:05] "[36mGET /unzipped_books/e04ba1fd-bbcd-4bc3-bbf0-7eec25e5b92d/EPUB/images/image_1.png HTTP/1.1[0m" 304 -
+2024-06-15 18:48:05,672 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 18:48:05] "[36mGET /unzipped_books/e04ba1fd-bbcd-4bc3-bbf0-7eec25e5b92d/EPUB/images/image_2.png HTTP/1.1[0m" 304 -
+2024-06-15 18:48:05,676 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 18:48:05] "[36mGET /unzipped_books/e04ba1fd-bbcd-4bc3-bbf0-7eec25e5b92d/EPUB/images/image_3.png HTTP/1.1[0m" 304 -
+2024-06-15 18:48:10,667 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 18:48:10] "[36mGET /unzipped_books/e04ba1fd-bbcd-4bc3-bbf0-7eec25e5b92d/EPUB/-21.html HTTP/1.1[0m" 304 -
+2024-06-15 18:48:10,718 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 18:48:10] "[36mGET /unzipped_books/e04ba1fd-bbcd-4bc3-bbf0-7eec25e5b92d/EPUB/images/image_1.png HTTP/1.1[0m" 304 -
+2024-06-15 18:48:10,724 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 18:48:10] "[36mGET /unzipped_books/e04ba1fd-bbcd-4bc3-bbf0-7eec25e5b92d/EPUB/images/image_3.png HTTP/1.1[0m" 304 -
+2024-06-15 18:48:10,725 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 18:48:10] "[36mGET /unzipped_books/e04ba1fd-bbcd-4bc3-bbf0-7eec25e5b92d/EPUB/images/image_2.png HTTP/1.1[0m" 304 -
+2024-06-15 18:48:12,879 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 18:48:12] "GET /unzipped_books/e04ba1fd-bbcd-4bc3-bbf0-7eec25e5b92d/EPUB/content.opf HTTP/1.1" 200 -
+2024-06-15 18:48:16,184 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 18:48:16] "[33mGET /unzipped_books/e04ba1fd-bbcd-4bc3-bbf0-7eec25e5b92d/EPUB/images HTTP/1.1[0m" 404 -
+2024-06-15 18:49:29,049 INFO werkzeug MainThread :  * Detected change in 'F:\\E-Reader\\EoneReader.py', reloading
+2024-06-15 18:49:30,190 WARNING werkzeug MainThread :  * Debugger is active!
+2024-06-15 18:49:30,206 INFO werkzeug MainThread :  * Debugger PIN: 769-155-080
+2024-06-15 18:51:16,734 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-15 18:51:16,734 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-06-15 18:51:16,734 INFO werkzeug MainThread :  * Restarting with stat
+2024-06-15 18:51:17,718 WARNING werkzeug MainThread :  * Debugger is active!
+2024-06-15 18:51:17,734 INFO werkzeug MainThread :  * Debugger PIN: 769-155-080
+2024-06-15 18:52:47,188 INFO werkzeug MainThread :  * Detected change in 'F:\\E-Reader\\EoneReader.py', reloading
+2024-06-15 18:52:47,282 INFO werkzeug MainThread :  * Restarting with stat
+2024-06-15 18:53:28,806 INFO werkzeug MainThread :  * Restarting with stat
+2024-06-15 18:53:29,666 WARNING werkzeug MainThread :  * Debugger is active!
+2024-06-15 18:53:29,681 INFO werkzeug MainThread :  * Debugger PIN: 769-155-080
+2024-06-15 18:54:44,697 INFO werkzeug MainThread :  * Detected change in 'F:\\E-Reader\\EoneReader.py', reloading
+2024-06-15 18:54:44,791 INFO werkzeug MainThread :  * Restarting with stat
+2024-06-15 18:59:40,575 WARNING werkzeug MainThread :  * Debugger is active!
+2024-06-15 18:59:40,590 INFO werkzeug MainThread :  * Debugger PIN: 769-155-080
+2024-06-15 19:01:44,369 INFO werkzeug MainThread :  * Detected change in 'F:\\E-Reader\\EoneReader.py', reloading
+2024-06-15 19:02:58,057 WARNING werkzeug MainThread :  * Debugger is active!
+2024-06-15 19:02:58,072 INFO werkzeug MainThread :  * Debugger PIN: 769-155-080
+2024-06-15 19:03:27,910 DEBUG root Thread-2 (process_request_thread) : get_usage result: (1, '2024-06-15 17:26:30.324710')
+2024-06-15 19:03:27,910 DEBUG root Thread-2 (process_request_thread) : Usage data is incomplete.
+2024-06-15 19:03:27,910 DEBUG root Thread-2 (process_request_thread) : get_usage result: (1, '2024-06-15 17:26:30.324710')
+2024-06-15 19:03:27,910 DEBUG root Thread-2 (process_request_thread) : Usage data is incomplete or not found.
+2024-06-15 19:03:27,944 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:03:27] "GET /index HTTP/1.1" 200 -
+2024-06-15 19:03:28,101 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:03:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-06-15 19:03:50,286 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:03:50] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-06-15 19:03:50,309 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:03:50] "GET /read_epub/9428abdc-2369-40a5-9796-88d4b73fe045 HTTP/1.1" 200 -
+2024-06-15 19:03:54,953 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:03:54] "GET /unzipped_books/9428abdc-2369-40a5-9796-88d4b73fe045/EPUB/-20.html HTTP/1.1" 200 -
+2024-06-15 19:03:54,978 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:03:54] "GET /unzipped_books/9428abdc-2369-40a5-9796-88d4b73fe045/EPUB/images/image_2.png HTTP/1.1" 200 -
+2024-06-15 19:03:54,981 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:03:54] "GET /unzipped_books/9428abdc-2369-40a5-9796-88d4b73fe045/EPUB/images/image_1.png HTTP/1.1" 200 -
+2024-06-15 19:03:54,985 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:03:54] "GET /unzipped_books/9428abdc-2369-40a5-9796-88d4b73fe045/EPUB/images/image_3.png HTTP/1.1" 200 -
+2024-06-15 19:03:54,992 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:03:54] "GET /unzipped_books/9428abdc-2369-40a5-9796-88d4b73fe045/EPUB/images/image_4.png HTTP/1.1" 200 -
+2024-06-15 19:03:55,001 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:03:55] "GET /unzipped_books/9428abdc-2369-40a5-9796-88d4b73fe045/EPUB/images/image_5.png HTTP/1.1" 200 -
+2024-06-15 19:03:55,005 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:03:55] "GET /unzipped_books/9428abdc-2369-40a5-9796-88d4b73fe045/EPUB/images/image_6.png HTTP/1.1" 200 -
+2024-06-15 19:03:55,009 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:03:55] "GET /unzipped_books/9428abdc-2369-40a5-9796-88d4b73fe045/EPUB/images/image_7.png HTTP/1.1" 200 -
+2024-06-15 19:04:02,003 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:04:02] "GET /unzipped_books/9428abdc-2369-40a5-9796-88d4b73fe045/EPUB/toc.xhtml HTTP/1.1" 200 -
+2024-06-15 19:04:05,940 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:04:05] "GET /unzipped_books/9428abdc-2369-40a5-9796-88d4b73fe045/EPUB/content.opf HTTP/1.1" 200 -
+2024-06-15 19:14:39,198 INFO werkzeug MainThread :  * Detected change in 'F:\\E-Reader\\EoneReader.py', reloading
+2024-06-15 19:16:23,356 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-15 19:16:23,356 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-06-15 19:16:23,356 INFO werkzeug MainThread :  * Restarting with stat
+2024-06-15 19:16:24,324 WARNING werkzeug MainThread :  * Debugger is active!
+2024-06-15 19:16:24,340 INFO werkzeug MainThread :  * Debugger PIN: 769-155-080
+2024-06-15 19:16:31,176 DEBUG root Thread-2 (process_request_thread) : get_usage result: (1, '2024-06-15 19:03:27.910889')
+2024-06-15 19:16:31,176 DEBUG root Thread-2 (process_request_thread) : Usage data is incomplete.
+2024-06-15 19:16:31,176 DEBUG root Thread-2 (process_request_thread) : get_usage result: (1, '2024-06-15 19:03:27.910889')
+2024-06-15 19:16:31,176 DEBUG root Thread-2 (process_request_thread) : Usage data is incomplete or not found.
+2024-06-15 19:16:31,197 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:16:31] "GET /index HTTP/1.1" 200 -
+2024-06-15 19:16:31,605 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:16:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-06-15 19:16:46,151 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:16:46] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-06-15 19:16:46,156 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:16:46] "GET /read_epub/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311 HTTP/1.1" 200 -
+2024-06-15 19:16:54,896 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:16:54] "[35m[1mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/style HTTP/1.1[0m" 500 -
+2024-06-15 19:16:54,915 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:16:54] "GET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/style?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-06-15 19:16:54,919 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:16:54] "GET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/style?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-06-15 19:16:54,980 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:16:54] "GET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/style?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-06-15 19:17:07,180 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:17:07] "GET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/-21.html HTTP/1.1" 200 -
+2024-06-15 19:17:07,214 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:17:07] "GET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/images/image_1.png HTTP/1.1" 200 -
+2024-06-15 19:17:07,214 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:17:07] "GET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/images/image_2.png HTTP/1.1" 200 -
+2024-06-15 19:17:08,311 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:17:08] "GET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/images/image_3.png HTTP/1.1" 200 -
+2024-06-15 19:17:16,610 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:17:16] "GET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/toc.xhtml HTTP/1.1" 200 -
+2024-06-15 19:17:20,417 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:17:20] "[33mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/images HTTP/1.1[0m" 404 -
+2024-06-15 19:17:23,363 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:17:23] "GET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/content.opf HTTP/1.1" 200 -
+2024-06-15 19:17:26,477 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:17:26] "GET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/mimetype HTTP/1.1" 200 -
+2024-06-15 19:17:31,135 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:17:31] "[35m[1mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/style HTTP/1.1[0m" 500 -
+2024-06-15 19:17:31,161 INFO werkzeug Thread-19 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:17:31] "[36mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/style?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-06-15 19:17:31,161 INFO werkzeug Thread-20 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:17:31] "[36mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/style?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-06-15 19:17:31,192 INFO werkzeug Thread-21 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:17:31] "[36mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/style?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-06-15 19:20:14,339 INFO werkzeug MainThread :  * Detected change in 'F:\\E-Reader\\EoneReader.py', reloading
+2024-06-15 19:20:14,449 INFO werkzeug MainThread :  * Restarting with stat
+2024-06-15 19:20:15,574 WARNING werkzeug MainThread :  * Debugger is active!
+2024-06-15 19:20:15,589 INFO werkzeug MainThread :  * Debugger PIN: 769-155-080
+2024-06-15 19:20:26,594 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:20:26] "GET /read_epub/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311 HTTP/1.1" 200 -
+2024-06-15 19:20:36,123 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:20:36] "[35m[1mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/style HTTP/1.1[0m" 500 -
+2024-06-15 19:23:12,301 INFO werkzeug MainThread :  * Detected change in 'F:\\E-Reader\\EoneReader.py', reloading
+2024-06-15 19:23:12,395 INFO werkzeug MainThread :  * Restarting with stat
+2024-06-15 19:23:13,410 WARNING werkzeug MainThread :  * Debugger is active!
+2024-06-15 19:23:13,442 INFO werkzeug MainThread :  * Debugger PIN: 769-155-080
+2024-06-15 19:23:17,111 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:23:17] "GET /read_epub/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311 HTTP/1.1" 200 -
+2024-06-15 19:23:18,526 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:23:18] "GET /read_epub/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311 HTTP/1.1" 200 -
+2024-06-15 19:23:25,556 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:23:25] "[33mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/style HTTP/1.1[0m" 404 -
+2024-06-15 19:28:29,275 INFO werkzeug MainThread :  * Detected change in 'F:\\E-Reader\\EoneReader.py', reloading
+2024-06-15 19:28:29,432 INFO werkzeug MainThread :  * Restarting with stat
+2024-06-15 19:30:40,465 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-15 19:30:40,465 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-06-15 19:30:40,465 INFO werkzeug MainThread :  * Restarting with stat
+2024-06-15 19:30:42,418 WARNING werkzeug MainThread :  * Debugger is active!
+2024-06-15 19:30:42,433 INFO werkzeug MainThread :  * Debugger PIN: 769-155-080
+2024-06-15 19:30:54,879 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:30:54] "GET /read_epub/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311 HTTP/1.1" 200 -
+2024-06-15 19:31:02,695 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:31:02] "[36mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/-21.html HTTP/1.1[0m" 304 -
+2024-06-15 19:31:02,773 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:31:02] "[36mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/images/image_1.png HTTP/1.1[0m" 304 -
+2024-06-15 19:31:02,778 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:31:02] "[36mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/images/image_2.png HTTP/1.1[0m" 304 -
+2024-06-15 19:31:04,582 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:31:04] "[36mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/images/image_3.png HTTP/1.1[0m" 304 -
+2024-06-15 19:31:06,693 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:31:06] "[35m[1mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/content.opf HTTP/1.1[0m" 500 -
+2024-06-15 19:31:15,829 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:31:15] "[35m[1mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/style HTTP/1.1[0m" 500 -
+2024-06-15 19:31:27,083 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:31:27] "[36mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/toc.xhtml HTTP/1.1[0m" 304 -
+2024-06-15 19:33:52,425 INFO werkzeug MainThread :  * Detected change in 'F:\\E-Reader\\EoneReader.py', reloading
+2024-06-15 19:33:52,597 INFO werkzeug MainThread :  * Restarting with stat
+2024-06-15 19:33:54,550 WARNING werkzeug MainThread :  * Debugger is active!
+2024-06-15 19:33:54,581 INFO werkzeug MainThread :  * Debugger PIN: 769-155-080
+2024-06-15 19:34:13,543 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:34:13] "GET /read_epub/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311 HTTP/1.1" 200 -
+2024-06-15 19:34:26,285 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:34:26] "[36mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/-21.html HTTP/1.1[0m" 304 -
+2024-06-15 19:34:26,363 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:34:26] "[36mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/images/image_2.png HTTP/1.1[0m" 304 -
+2024-06-15 19:34:26,364 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:34:26] "[36mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/images/image_1.png HTTP/1.1[0m" 304 -
+2024-06-15 19:34:26,368 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:34:26] "[36mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/images/image_3.png HTTP/1.1[0m" 304 -
+2024-06-15 19:34:29,315 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:34:29] "GET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/content.opf HTTP/1.1" 200 -
+2024-06-15 19:34:33,175 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:34:33] "[35m[1mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/style HTTP/1.1[0m" 500 -
+2024-06-15 19:34:33,230 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:34:33] "[36mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/style?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-06-15 19:34:33,242 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:34:33] "[36mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/style?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-06-15 19:34:33,284 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:34:33] "[36mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/style?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-06-15 19:34:46,576 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:34:46] "[36mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/toc.xhtml HTTP/1.1[0m" 304 -
+2024-06-15 19:35:32,739 INFO werkzeug MainThread :  * Detected change in 'F:\\E-Reader\\EoneReader.py', reloading
+2024-06-15 19:35:32,958 INFO werkzeug MainThread :  * Restarting with stat
+2024-06-15 19:35:35,559 WARNING werkzeug MainThread :  * Debugger is active!
+2024-06-15 19:35:35,651 INFO werkzeug MainThread :  * Debugger PIN: 769-155-080
+2024-06-15 19:35:38,317 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:35:38] "GET /read_epub/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311 HTTP/1.1" 200 -
+2024-06-15 19:35:43,073 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:35:43] "[36mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/-21.html HTTP/1.1[0m" 304 -
+2024-06-15 19:35:43,148 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:35:43] "[36mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/images/image_1.png HTTP/1.1[0m" 304 -
+2024-06-15 19:35:43,150 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:35:43] "[36mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/images/image_2.png HTTP/1.1[0m" 304 -
+2024-06-15 19:35:43,153 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:35:43] "[36mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/images/image_3.png HTTP/1.1[0m" 304 -
+2024-06-15 19:35:45,346 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:35:45] "GET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/content.opf HTTP/1.1" 200 -
+2024-06-15 19:35:48,286 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 19:35:48] "[33mGET /unzipped_books/d9df9b35-1e5d-4ac4-91d5-22cf3ba58311/EPUB/style HTTP/1.1[0m" 404 -
+2024-06-15 20:31:17,029 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-15 20:31:17,029 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-06-15 20:31:17,044 INFO werkzeug MainThread :  * Restarting with stat
+2024-06-15 20:31:18,794 WARNING werkzeug MainThread :  * Debugger is active!
+2024-06-15 20:31:18,825 INFO werkzeug MainThread :  * Debugger PIN: 769-155-080
+2024-06-15 20:31:44,102 DEBUG root Thread-2 (process_request_thread) : get_usage result: (1, '2024-06-15 19:16:31.176218')
+2024-06-15 20:31:44,103 DEBUG root Thread-2 (process_request_thread) : Usage data is incomplete.
+2024-06-15 20:31:44,105 DEBUG root Thread-2 (process_request_thread) : get_usage result: (1, '2024-06-15 19:16:31.176218')
+2024-06-15 20:31:44,105 DEBUG root Thread-2 (process_request_thread) : Usage data is incomplete or not found.
+2024-06-15 20:31:44,150 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:31:44] "GET /index HTTP/1.1" 200 -
+2024-06-15 20:31:44,818 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:31:44] "GET /static/css/style.css HTTP/1.1" 200 -
+2024-06-15 20:32:05,866 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:32:05] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2024-06-15 20:32:06,015 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:32:06] "GET /read_epub/f5a2d4d1-a62c-4d82-b196-e37beaff7eab HTTP/1.1" 200 -
+2024-06-15 20:32:11,652 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:32:11] "GET /unzipped_books/f5a2d4d1-a62c-4d82-b196-e37beaff7eab/EPUB/content.opf HTTP/1.1" 200 -
+2024-06-15 20:32:14,832 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:32:14] "GET /unzipped_books/f5a2d4d1-a62c-4d82-b196-e37beaff7eab/EPUB/toc.xhtml HTTP/1.1" 200 -
+2024-06-15 20:32:21,504 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:32:21] "GET /unzipped_books/f5a2d4d1-a62c-4d82-b196-e37beaff7eab/EPUB/uttraakand_anuvaad-30.html HTTP/1.1" 200 -
+2024-06-15 20:32:21,775 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:32:21] "GET /unzipped_books/f5a2d4d1-a62c-4d82-b196-e37beaff7eab/EPUB/images/image_1.png HTTP/1.1" 200 -
+2024-06-15 20:32:21,880 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:32:21] "GET /unzipped_books/f5a2d4d1-a62c-4d82-b196-e37beaff7eab/EPUB/images/image_2.png HTTP/1.1" 200 -
+2024-06-15 20:32:21,882 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:32:21] "GET /unzipped_books/f5a2d4d1-a62c-4d82-b196-e37beaff7eab/EPUB/images/image_3.png HTTP/1.1" 200 -
+2024-06-15 20:32:21,900 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:32:21] "GET /unzipped_books/f5a2d4d1-a62c-4d82-b196-e37beaff7eab/EPUB/images/image_4.png HTTP/1.1" 200 -
+2024-06-15 20:32:21,904 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:32:21] "GET /unzipped_books/f5a2d4d1-a62c-4d82-b196-e37beaff7eab/EPUB/images/image_5.png HTTP/1.1" 200 -
+2024-06-15 20:32:21,931 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:32:21] "GET /unzipped_books/f5a2d4d1-a62c-4d82-b196-e37beaff7eab/EPUB/images/image_6.png HTTP/1.1" 200 -
+2024-06-15 20:32:22,092 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:32:22] "GET /unzipped_books/f5a2d4d1-a62c-4d82-b196-e37beaff7eab/EPUB/images/image_7.png HTTP/1.1" 200 -
+2024-06-15 20:32:22,226 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:32:22] "GET /unzipped_books/f5a2d4d1-a62c-4d82-b196-e37beaff7eab/EPUB/images/image_8.png HTTP/1.1" 200 -
+2024-06-15 20:32:22,237 INFO werkzeug Thread-19 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:32:22] "GET /unzipped_books/f5a2d4d1-a62c-4d82-b196-e37beaff7eab/EPUB/images/image_9.png HTTP/1.1" 200 -
+2024-06-15 20:32:22,262 INFO werkzeug Thread-20 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:32:22] "GET /unzipped_books/f5a2d4d1-a62c-4d82-b196-e37beaff7eab/EPUB/images/image_10.png HTTP/1.1" 200 -
+2024-06-15 20:32:22,266 INFO werkzeug Thread-21 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:32:22] "GET /unzipped_books/f5a2d4d1-a62c-4d82-b196-e37beaff7eab/EPUB/images/image_11.png HTTP/1.1" 200 -
+2024-06-15 20:32:22,274 INFO werkzeug Thread-22 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:32:22] "GET /unzipped_books/f5a2d4d1-a62c-4d82-b196-e37beaff7eab/EPUB/images/image_12.png HTTP/1.1" 200 -
+2024-06-15 20:32:22,423 INFO werkzeug Thread-23 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:32:22] "GET /unzipped_books/f5a2d4d1-a62c-4d82-b196-e37beaff7eab/EPUB/images/image_13.png HTTP/1.1" 200 -
+2024-06-15 20:32:22,558 INFO werkzeug Thread-24 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:32:22] "GET /unzipped_books/f5a2d4d1-a62c-4d82-b196-e37beaff7eab/EPUB/images/image_14.png HTTP/1.1" 200 -
+2024-06-15 20:32:22,581 INFO werkzeug Thread-25 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:32:22] "GET /unzipped_books/f5a2d4d1-a62c-4d82-b196-e37beaff7eab/EPUB/images/image_15.png HTTP/1.1" 200 -
+2024-06-15 20:32:22,593 INFO werkzeug Thread-26 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:32:22] "GET /unzipped_books/f5a2d4d1-a62c-4d82-b196-e37beaff7eab/EPUB/images/image_16.png HTTP/1.1" 200 -
+2024-06-15 20:32:29,737 INFO werkzeug Thread-27 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:32:29] "GET /unzipped_books/f5a2d4d1-a62c-4d82-b196-e37beaff7eab/META-INF/container.xml HTTP/1.1" 200 -
+2024-06-15 20:32:33,907 INFO werkzeug Thread-28 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 20:32:33] "GET /unzipped_books/f5a2d4d1-a62c-4d82-b196-e37beaff7eab/mimetype HTTP/1.1" 200 -
+2024-06-15 22:24:27,754 INFO werkzeug Thread-29 (process_request_thread) : 127.0.0.1 - - [15/Jun/2024 22:24:27] "[36mGET /unzipped_books/f5a2d4d1-a62c-4d82-b196-e37beaff7eab/EPUB/toc.xhtml HTTP/1.1[0m" 304 -
