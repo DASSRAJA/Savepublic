@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EBooks</title>
+</head>
+<body>
+    <h1>Available eBooks</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Language</th>
+                <th>Description</th>
+                <th>Cover Image</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for ebook in ebooks %}
+            <tr>
+                <td>{{ ebook.title }}</td>
+                <td>{{ ebook.author }}</td>
+                <td>{{ ebook.language }}</td>
+                <td>{{ ebook.description }}</td>
+                <td>
+                    {% if ebook.cover_image %}
+                    <img src="{{ url_for('static', filename='uploads/' ~ ebook.cover_image) }}" alt="{{ ebook.title }} cover" width="100">
+                    {% else %}
+                    No cover image
+                    {% endif %}
+                </td>
+                <td>
+                    <a href="{{ url_for('download_ebook', ebook_id=ebook.id, filename=filename) }}">Download</a>
+                    <!-- Add preview link if needed -->
+                </td>
+				<td>
+			{% if ebook.cover_image %}
+			<img src="{{ url_for('static', filename='uploads/' ~ ebook.cover_image) }}" alt="{{ ebook.title }} cover" width="100">
+			{% else %}
+			No cover image
+			{% endif %}
+		</td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

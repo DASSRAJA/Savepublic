@@ -1,0 +1,40 @@
+# Environment variables
+.env
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Flask instance folder
+instance/
+
+# Flask cache
+.webassets-cache
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Other IDE / Editor config files
+.vscode/
+.idea/
+
+# Uploads
+uploads/
+
+# PyInstaller build and distribution directories
+build/
+dist/
+
+# PyInstaller spec file
+*.spec

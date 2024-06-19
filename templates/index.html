@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <h1>Welcome to eBook Creator</h1>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="flash {{ category }}">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    
+    {% if current_user.is_authenticated %}
+        <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data">
+            <label for="title">Title:</label>
+            <input type="text" name="title" id="title">
+            <br>
+            <label for="author">Author:</label>
+            <input type="text" name="author" id="author">
+            <br>
+            <label for="language">Language:</label>
+            <input type="text" name="language" id="language">
+            <br>
+            <label for="description">Description:</label>
+            <textarea name="description" id="description"></textarea>
+            <br>
+            <label for="creator">Creator/Developer:</label>
+            <input type="text" id="creator" name="creator" placeholder="Enter creator/developer name" required>
+            <br>
+            <label for="file">Upload File:</label>
+            <input type="file" name="file" id="file">
+            <br>
+            <button type="submit">Upload and Convert</button>
+        </form>
+        <p><a href="{{ url_for('logout') }}">Logout</a></p>
+    {% else %}
+        <p><a href="{{ url_for('login') }}">Login</a> or <a href="{{ url_for('register') }}">Register</a> to upload and convert files.</p>
+    {% endif %}
+</body>
+</html>
