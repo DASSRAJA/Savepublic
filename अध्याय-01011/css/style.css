@@ -1,0 +1,193 @@
+/* General body and text styles */
+body {
+    font-family: 'Nirmala UI', sans-serif;
+    background-color: #f0f4fa; /* Light background */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 32px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #0056b3;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+    margin: 15px 0;
+}
+
+/* Buttons */
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+/* Audio and transcription containers */
+.audio-section,
+.transcription {
+    background-color: #fff;
+    padding: 20px; /* Added padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Transcription iframe container */
+.iframe-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e0ebff; /* Light blue background */
+    border-radius: 8px;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+iframe {
+    width: 100%; /* Set width to 100% for responsiveness */
+    height: 400px; /* Adjusted height */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Audio cover */
+.audio-cover {
+    width: 300px; /* Default size */
+    margin-right: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.audio-cover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#visualizer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.bar {
+    width: 5px;
+    height: 100%;
+    background-color: #3498db;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { height: 10px; }
+    50% { height: 100%; }
+    100% { height: 10px; }
+}
+
+/* Back home link */
+.back-home {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.back-home a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-home a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .audio-cover {
+        width: 200px; /* Adjusted for smaller screens */
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    .audio-section,
+    .transcription {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .iframe-container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .audio-cover {
+        width: 150px; /* Further adjust for mobile */
+    }
+
+    iframe {
+        height: 300px; /* Adjust height for smaller devices */
+    }
+
+    button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .audio-section,
+    .transcription {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html> 
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>अध्याय -0101-श्री गीता महाग्रंथ महिमा </title> 
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>
+    <h2>अध्याय -0101-श्री गीता महाग्रंथ महिमा</h2>
+
+    <div class="audio-section">
+        <!-- Book Cover Image -->
+        <img src="GreatGitaGranth.jpg" alt="Audio Cover" class="audio-cover" id="audio-cover">
+		
+        <!-- Audio Player and Controls -->
+
+
+	   <div>
+            <h2 id="shlok-title"></h2>
+            <audio id="audio-player" controls></audio>
+            <button id="prevBtn" onclick="prevShlok()">Previous</button>
+            <button id="nextBtn" onclick="nextShlok()">Next</button>
+        </div>
+    </div>
+    
+    <!-- Audio Visualizer -->
+    <div id="visualizer">
+        <div class="bar" style="animation-delay: 0s;"></div>
+        <div class="bar" style="animation-delay: 0.1s;"></div>
+        <div class="bar" style="animation-delay: 0.2s;"></div>
+        <div class="bar" style="animation-delay: 0.3s;"></div>
+        <div class="bar" style="animation-delay: 0.4s;"></div>
+    </div>
+
+    <!-- Transcription Section -->
+    <div class="transcription">
+        <p>
+            <a id="transcription-link" href="" target="_blank">📄 View Transcription</a>
+        </p>
+        <p>
+            <a id="local-transcription-link" href="" target="_blank">📄 View Transcription from Local</a>
+        </p>
+    </div>
+
+    <!-- Iframe for Transcription Display -->
+    <div class="iframe-container">
+        <iframe id="transcription-iframe" src=""></iframe>
+    </div>
+	<div id="transcription-display"></div>
+<script>
+    fetch('अध्याय-0101_श्लोक-01.txt')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('transcription-display').innerText = data;
+        });
+</script>
+
+    <!-- Navigation Buttons -->
+    <div class="navigation">
+        <button id="prevBtn" onclick="prevShlok()">Previous</button>
+        <button id="nextBtn" onclick="nextShlok()">Next</button>
+    </div>
+
+    <!-- Back to Home -->
+    <div class="back-home">
+        <a href="../index.html">🏠 मुख्य पृष्ठ</a>
+    </div>
+
+<script>
+    const totalShloks = 7; // Adjust this for the specific chapter
+    let shloks = [];
+    let currentShlokIndex = 0;
+
+    function populateShloks() {
+        for (let i = 1; i <= totalShloks; i++) {
+            const shlokNumber = i.toString();
+            let title = ` श्लोक ${shlokNumber}`;
+            let audioFile = `अध्याय-0101_श्लोक-${shlokNumber.padStart(2, '0')}.mp3`;
+            let transcriptionFile = `अध्याय-0101_श्लोक-${shlokNumber.padStart(2, '0')}.txt`;
+
+            shloks.push({ title, audio: audioFile, transcriptionFile });
+        }
+    }
+
+    function updateShlok() {
+        const shlok = shloks[currentShlokIndex];
+        document.getElementById('shlok-title').innerText = shlok.title;
+        document.getElementById('audio-player').src = shlok.audio;
+
+        // Update transcription links
+        document.getElementById('transcription-link').href = `${shlok.transcriptionFile}`;
+        document.getElementById('local-transcription-link').href = `file:///F:/GitaGranth_Project/अध्याय-1-2/अध्याय-0101/${shlok.transcriptionFile}`;
+
+        // Display transcription in the iframe
+        document.getElementById('transcription-iframe').src = `${shlok.transcriptionFile}`;
+
+        document.getElementById('prevBtn').disabled = currentShlokIndex === 0;
+        document.getElementById('nextBtn').disabled = currentShlokIndex === shloks.length - 1;
+    }
+
+    function prevShlok() {
+        if (currentShlokIndex > 0) {
+            currentShlokIndex--;
+            updateShlok();
+        }
+    }
+
+    function nextShlok() {
+        if (currentShlokIndex < shloks.length - 1) {
+            currentShlokIndex++;
+            updateShlok();
+        }
+    }
+
+    function initializePage() {
+        populateShloks();
+        updateShlok();
+        syncTextWithAudio();
+        startVisualizer();
+    }
+
+    window.onload = initializePage;
+// Audio visualizer bars
+        const visualizer = document.getElementById('visualizer');
+        for (let i = 6; i <= 20; i++) {
+            const bar = document.createElement('div');
+            bar.classList.add('bar');
+            bar.style.animationDelay = `${i * 0.1}s`;
+            visualizer.appendChild(bar);
+        }
+    // Audio visualizer function
+    function startVisualizer() {
+        const audioPlayer = document.getElementById('audio-player');
+        const bars = document.querySelectorAll('.bar');
+
+        audioPlayer.addEventListener('play', () => {
+            audioPlayer.addEventListener('timeupdate', () => {
+                bars.forEach((bar, index) => {
+                    bar.style.height = `${Math.random() * 100}%`; // Random bar height for effect
+                });
+            });
+        });
+
+        audioPlayer.addEventListener('pause', () => {
+            bars.forEach(bar => bar.style.height = '10%'); // Reset height when paused
+        });
+    }
+</script>
+
+</body>
+</html>
